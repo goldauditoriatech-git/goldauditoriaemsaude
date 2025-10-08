@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Sobre from "./pages/AboutSection";
 import Servicos from "./pages/ServicesSection";
-// import Contato from "./pages/Contato";
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/servicos" element={<Servicos />} />
-        {/* <Route path="/contato" element={<Contato />} /> */}
       </Routes>
     </BrowserRouter>
   );

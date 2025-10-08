@@ -10,8 +10,8 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-              <Shield className="text-white" size={24} />
+            <div className="w-18 h-10 rounded-full flex items-center justify-center mr-3">
+              <img src="/logo.png" alt="Logo Gold Auditoria" className="w-18 h-18" />
             </div>
             <h1 className="text-xl font-bold text-gray-800">Gold Auditoria em Saúde</h1>
           </div>

@@ -1,4 +1,4 @@
-import { Clock, FileText, BarChart3, CheckCircle } from "lucide-react";
+import { Clock, FileText, BarChart3, GraduationCap, CheckCircle, FileSearch, TrendingUp } from "lucide-react";
 
 export default function ServicesSection() {
   return (
@@ -12,7 +12,7 @@ export default function ServicesSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <Clock className="text-amber-600" size={28} />
             </div>
@@ -35,7 +35,7 @@ export default function ServicesSection() {
               </li>
             </ul>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <FileText className="text-amber-600" size={28} />
             </div>
@@ -58,7 +58,7 @@ export default function ServicesSection() {
               </li>
             </ul>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <BarChart3 className="text-amber-600" size={28} />
             </div>
@@ -78,6 +78,75 @@ export default function ServicesSection() {
               <li className="flex items-center">
                 <CheckCircle className="text-amber-500 mr-2" size={16} />
                 <span className="text-gray-600">Adequação às normas</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+              <FileSearch className="text-amber-600" size={28} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Gestão de Glosas</h3>
+            <p className="text-gray-600 mb-6">
+              Análise, contestação e prevenção de glosas médicas e hospitalares, com foco na sustentabilidade financeira das instituições.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Redução de perdas financeiras</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Contestação eficiente de glosas</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Sustentabilidade financeira</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+              <TrendingUp className="text-amber-600" size={28} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Consultoria em Gestão</h3>
+            <p className="text-gray-600 mb-6">
+              Apoio estratégico para hospitais, clínicas e operadoras, visando eficiência operacional, redução de custos e melhoria de indicadores.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Apoio estratégico institucional</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Eficiência e redução de custos</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Melhoria de indicadores</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+              <GraduationCap className="text-amber-600" size={28} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Capacitação e Treinamento</h3>
+            <p className="text-gray-600 mb-6">
+              Programas de formação em auditoria em saúde, gestão de glosas e protocolos assistenciais para equipes multiprofissionais.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Desenvolvimento de competências</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Formação de equipes multiprofissionais</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="text-amber-500 mr-2" size={16} />
+                <span className="text-gray-600">Programas de formação em auditoria</span>
               </li>
             </ul>
           </div>

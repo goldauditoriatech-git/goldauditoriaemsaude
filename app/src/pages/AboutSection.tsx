@@ -11,10 +11,10 @@ export default function AboutSection() {
             A Gold Auditoria em Saúde nasce com o propósito de promover qualidade, transparência e eficiência nos processos de gestão em saúde.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div>
+        <div className="grid md:grid-cols-2 gap-16 mb-16">
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Nossa Missão</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6" >
               "Oferecer soluções em auditoria e consultoria em saúde, assegurando ética, precisão e inovação, com foco na melhoria contínua da assistência ao paciente e no uso racional dos recursos."
             </p>
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 mt-8">Nossa Visão</h3>
@@ -24,7 +24,7 @@ export default function AboutSection() {
           </div>
           <div>
             <img 
-              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/86f34e1f-a1b2-4326-b939-283109006608.png" 
+              src="https://i.imgur.com/DLrmdWd.jpeg" 
               alt="Equipe de profissionais da Gold Auditoria em Saúde em reunião de trabalho" 
               className="rounded-lg shadow-md"
             />

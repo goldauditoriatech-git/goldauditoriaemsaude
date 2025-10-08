@@ -17,7 +17,24 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Obrigado pelo seu contato! Retornaremos em breve.");
+    // Número do WhatsApp no formato internacional, exemplo: 5581999999999
+    const whatsappNumber = "5581982068680";
+    // Monta a mensagem
+    const text =
+      `Olá, estou buscando mais informações sobre a Gold Auditoria em Saúde %0A` +
+      `%0A` +
+      `Informações:%0A` +
+      `%0A` +
+      `Nome: ${formData.name}%0A` +
+      `E-mail: ${formData.email}%0A` +
+      `Empresa: ${formData.company}%0A` +
+      `Telefone: ${formData.phone}%0A` +
+      `%0A` +
+      `Mensagem: ${formData.message}%0A`;
+    // Monta o link do WhatsApp
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+    // Abre o WhatsApp em nova aba
+    window.open(whatsappUrl, "_blank");
     setFormData({ name: "", email: "", company: "", phone: "", message: "" });
   };
 
@@ -114,7 +131,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Telefone</h4>
-                    <p className="text-gray-600">(XX) XXXX-XXXX</p>
+                    <p className="text-gray-600">(81) 98206-8680</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -123,10 +140,10 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">E-mail</h4>
-                    <p className="text-gray-600">contato@goldauditoria.com.br</p>
+                    <p className="text-gray-600">comercial@goldauditoria.com.br</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
                     <MapPin className="text-amber-600" size={20} />
                   </div>
@@ -134,7 +151,7 @@ export default function ContactSection() {
                     <h4 className="font-semibold text-gray-800">Endereço</h4>
                     <p className="text-gray-600">Av. Exemplo, 123, Sala 456<br />Centro, Cidade - UF</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="mt-8">
                 <h4 className="font-semibold text-gray-800 mb-4">Horário de Atendimento</h4>

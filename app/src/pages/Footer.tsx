@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-6">
-              <div className="bg-amber-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
-                <Shield className="text-white" size={18} />
-              </div>
+            <div className="w-18 h-10 rounded-full flex items-center justify-center mr-3">
+              <img src="/logo.png" alt="Logo Gold Auditoria" className="w-18 h-18" />
+            </div>
               <h3 className="text-xl font-bold">Gold Auditoria em Saúde</h3>
             </div>
             <p className="text-gray-400 mb-4">
@@ -38,21 +38,21 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone className="mr-2" size={16} />
-                <span className="text-gray-400">(XX) XXXX-XXXX</span>
+                <span className="text-gray-400">(81) 98206-8680</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2" size={16} />
-                <span className="text-gray-400">contato@goldauditoria.com.br</span>
+                <span className="text-gray-400">comercial@goldauditoria.com.br</span>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <MapPin className="mr-2" size={16} />
                 <span className="text-gray-400">Av. Exemplo, 123, Centro</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Gold Auditoria em Saúde. Todos os direitos reservados.</p>
+          <p>© 2025 Gold Auditoria em Saúde. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

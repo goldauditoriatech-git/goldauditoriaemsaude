@@ -30,7 +30,7 @@ export default function HeroSection() {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img 
-              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6aaa508f-4991-4e64-9af9-9d9f3eda0d1d.png" 
+              src="https://i.imgur.com/zwXpq05.jpeg" 
               alt="Profissionais de auditoria em saúde analisando documentos em uma mesa de reunião" 
               className="rounded-lg shadow-xl"
             />
