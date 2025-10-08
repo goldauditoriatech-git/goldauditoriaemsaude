@@ -1,3 +1,47 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Ensure form controls stay readable on mobile and with browser autofill/dark-mode */
+input,
+textarea,
+select {
+  /* default to inherit color (usually body) but force readable fallback */
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Placeholder should be slightly muted but visible */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0,0,0,0.45);
+}
+
+/* When prefers-color-scheme is dark, keep placeholders and inputs readable */
+@media (prefers-color-scheme: dark) {
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(255,255,255,0.65);
+  }
+}
+
+/* Chrome/Edge autofill tends to change background/text color; normalize it */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* In case some global rule sets color: white on inputs for mobile, explicitly set a readable color */
+input,
+textarea {
+  color: #1f2937; /* gray-800 - readable on white backgrounds */
+}
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea {
+    color: #e5e7eb; /* gray-200 - readable on dark backgrounds */
+  }
+}
